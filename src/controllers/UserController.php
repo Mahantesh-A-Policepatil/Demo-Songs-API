@@ -199,32 +199,5 @@ class UserController
             http_response_code(401);
             echo json_encode(["message" => "Access denied. Token not provided."]);
         }
-    }
-
-    /**
-     * getPlaylist
-     *
-     * @return void
-     */
-    public function getPlaylist()
-    {
-        $token = $this->jwt->getBearerToken();
-
-        if ($token) {
-            $user_data = $this->jwt->decodeToken($token);
-
-            if ($user_data) {
-                $playlist = $this->user->getPlaylist($user_data['id']);
-
-                http_response_code(200);
-                echo json_encode($playlist);
-            } else {
-                http_response_code(401);
-                echo json_encode(["message" => "Invalid token."]);
-            }
-        } else {
-            http_response_code(401);
-            echo json_encode(["message" => "Access denied. Token not provided."]);
-        }
-    }
+    }    
 }

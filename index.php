@@ -28,10 +28,7 @@ if (isset($uri[2])) {
             break;
         case 'removeFromPlaylist':
             $controller->removeFromPlaylist();
-            break;
-        case 'playlist':
-            $controller->getPlaylist();
-            break;
+            break;       
         default:
             header("HTTP/1.1 404 Not Found");
             echo json_encode(["message" => "Endpoint not found."]);
