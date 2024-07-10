@@ -53,4 +53,4 @@ body parameter
 Inside the header create new key as `Content-Type` and enter the value as `application/json`\
 Inside the header create anoth new key as `Authorization` and enter the value as Bearer followed by the TOKEN recived in Login API\
 
-Click send button to remove a song from pay list\
+Click send button to remove a song from pay list
