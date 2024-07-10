@@ -1,7 +1,7 @@
 Using post man to call the APIs,
 
-- Sign-Up API -  http://localhost/Demo-Songs-API/signup (POST)
-body parameter
+- Sign-Up API -  http://localhost/Demo-Songs-API/signup (POST)\
+body parameter\
 `{
     "name": "Sidd Bhosale",
     "email": "sidd_bhosale@yahoo.in",
